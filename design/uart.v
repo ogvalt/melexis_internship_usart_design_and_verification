@@ -1,4 +1,4 @@
-module uart1 	(
+module uart	(
 					i_clk,
 					i_rst_n,
 					i_we,
@@ -39,7 +39,7 @@ module uart1 	(
 						ubrrl,
 						udr;
 
-	uart_module1 uart_module1_inst1 	(  
+	uart_module uart_module_inst1 	(  
 						              .i_clk					(i_clk),
 						              .i_rst_n					(i_rst_n),
 						              .i_we						(i_we),

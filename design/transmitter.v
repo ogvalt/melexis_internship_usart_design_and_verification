@@ -1,4 +1,4 @@
-module transmitter1	(
+module transmitter	(
 					i_txclk,
 					i_rst_n,	
 					i_tx_data,
@@ -85,7 +85,7 @@ reg 					data_read_from_udr;
 
 /*--------------------------Modules Instances-------------------*/
 
-parity_checker1  parity_check1 (
+parity_checker  parity_check1 (
 				              	.i_clk 				(i_txclk),
 				              	.i_rst_n			(i_rst_n),  
 				              	.i_parity_mode_0	(i_upm[0]),
@@ -95,7 +95,7 @@ parity_checker1  parity_check1 (
 				              	.o_parity_check		(parity_bit)
 				              );
 
-fsm_tx1 	transmitter1_fsm1	( 
+fsm_tx 	transmitter1_fsm1	( 
 								.i_txclk				(i_txclk), 
 								.i_rst_n				(i_rst_n),
 								.i_data_in_udr			(i_tx_data_en),

@@ -14,9 +14,9 @@
 //
 // ---------------------------------------------------------------------------
 
-`include "if.svh"
-`include "dut_top.sv"
-`include "environment.sv"
+`include "./simulation/if.svh"
+`include "./simulation/dut_top.sv"
+`include "./simulation/environment.sv"
 
 module verification();
 

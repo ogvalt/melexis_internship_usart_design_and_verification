@@ -13,7 +13,7 @@
 // Copyright (c) Melexis Digital Competence Center
 //
 // ---------------------------------------------------------------------------
-module fifo1(  
+module fifo(  
 			  i_clk,
 			  i_rst_n,
               i_shift_register,

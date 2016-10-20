@@ -13,7 +13,7 @@
 // Copyright (c) Melexis Digital Competence Center
 //
 // ---------------------------------------------------------------------------
-module fsm_tx1 ( 
+module fsm_tx ( 
 				i_txclk, 
 				i_rst_n,
 				i_data_in_udr,

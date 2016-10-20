@@ -1,5 +1,5 @@
 
-`include "if.svh"
+`include "./simulation/if.svh"
 
 `ifndef __UART_UVC_DEFINES__
 `define __UART_UVC_DEFINES__
@@ -182,7 +182,7 @@ class uart_frame extends base_uart_transaction;
     // $display("[%t][INSTN] CREATE FRAME INSTANCE",$time);
   endfunction : new
   
-  function post_randomize(logic mpcm_frame_type);
+  function void post_randomize();
 
     case (data_len_type) 
           DATA_5BIT:      rx_bits_num = 5;

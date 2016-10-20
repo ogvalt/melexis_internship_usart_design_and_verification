@@ -2,8 +2,8 @@
 `ifndef __SCOREBOARD_SVH__
 `define __SCOREBOARD_SVH__
 
-`include "if.svh"
-`include "uart_uvc.svh"
+`include "./simulation/if.svh"
+`include "./simulation/uart_uvc.svh"
 // `include "chcker.svh"
 
 class scoreboard;

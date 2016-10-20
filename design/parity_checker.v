@@ -2,7 +2,7 @@
   Module description
 */
 
-module parity_checker1(
+module parity_checker(
               i_clk,
               i_rst_n,  
               i_parity_mode_0,

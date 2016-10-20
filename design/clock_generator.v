@@ -13,7 +13,7 @@
 // Copyright (c) Melexis Digital Competence Center
 //
 // ---------------------------------------------------------------------------
-module clock_generator1 (  
+module clock_generator (  
               i_clk,
               i_rst_n,
               i_ubrrl_new,

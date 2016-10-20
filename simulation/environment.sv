@@ -1,7 +1,7 @@
 
-`include "if.svh"
+`include "./simulation/if.svh"
 // `include "scrbd.svh"
-`include "seqncr.svh"
+`include "./simulation/seqncr.svh"
 
 program environment(dut_interface dut_if, bus_interface bus_if, uart_interface uart_if);
 

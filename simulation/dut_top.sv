@@ -2,7 +2,8 @@
 `ifndef __DUT_TOP__
 `define __DUT_TOP__
 
-`include "if.svh"
+`include "./simulation/if.svh"
+`include "./design/uart.v"
 
 module dut_top (
 					dut_interface 		dut_if,
@@ -10,7 +11,7 @@ module dut_top (
 					uart_interface 		uart_if  
 				);
 	
-	uart1 	dut (
+	uart 	dut (
 					.i_clk 			(dut_if.clk),
 					.i_rst_n 		(dut_if.rst_n),
 					.i_we 			(bus_if.write_enable),

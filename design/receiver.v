@@ -13,7 +13,7 @@
 // Copyright (c) Melexis Digital Competence Center
 //
 // ---------------------------------------------------------------------------
-module receiver1 (
+module receiver (
 					i_rxclk,
 					i_rst_n,
 					i_rx,
@@ -105,7 +105,7 @@ wire 				fsm_frame_end;
 
 /*--------------------------Modules Instances-------------------*/
 
-parity_checker1  parity_check2 (
+parity_checker  parity_check2 (
 				              	.i_clk 				(i_rxclk),
 				              	.i_rst_n			(i_rst_n),  
 				              	.i_parity_mode_0	(i_upm[0]),
@@ -115,7 +115,7 @@ parity_checker1  parity_check2 (
 				              	.o_parity_check		(parity_bit)
 				              );
 
-fsm_rx1 receiver1_fsm1	(
+fsm_rx receiver1_fsm1	(
 							.i_rxclk					(i_rxclk),
 							.i_rst_n					(i_rst_n),
 							.i_edge_detect				(high_to_low_transition),

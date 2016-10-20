@@ -13,7 +13,7 @@
 // Copyright (c) Melexis Digital Competence Center
 //
 // ---------------------------------------------------------------------------
-module uart_module1(  
+module uart_module(  
               i_clk,
               i_rst_n,
 
@@ -130,7 +130,7 @@ integer 				i; 	// iterator for shift register reorder
 
 /*--------------------------Module instances-------------------*/
 
-clock_generator1 clock_generator1_inst1(  
+clock_generator clock_generator1_inst1(  
               							.i_clk					(i_clk),
               							.i_rst_n				(i_rst_n),
               							.i_ubrrl_new			(i_ubrrl_select),
@@ -148,7 +148,7 @@ clock_generator1 clock_generator1_inst1(
               							.o_xcko					(xclko)
             						);
 
-transmitter1	transmitter1_inst1		(
+transmitter	transmitter1_inst1		(
 										.i_txclk				(txclk),
 										.i_rst_n				(i_rst_n),	
 										.i_tx_data 				(udr_tx),
@@ -162,7 +162,7 @@ transmitter1	transmitter1_inst1		(
 										.o_data_read_from_udr 	(udr_empty)
 									);  
 
-receiver1 receiver1_inst1 			(
+receiver receiver1_inst1 			(
 										.i_rxclk				(rxclk),
 										.i_rst_n				(i_rst_n),
 										.i_rx 					(i_rx),
@@ -180,7 +180,7 @@ receiver1 receiver1_inst1 			(
 										.o_shift_register_valid	(shift_reg_valid)
 									);  
 
-fifo1 fifo1_inst1 					(  
+fifo fifo1_inst1 					(  
 										.i_clk 					(i_clk),
 										.i_rst_n 				(i_rst_n),
 							            .i_shift_register 		(shift_reg_re_order),

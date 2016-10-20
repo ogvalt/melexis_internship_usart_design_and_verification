@@ -1,4 +1,4 @@
-module fsm_rx1 (
+module fsm_rx (
 				i_rxclk,
 				i_rst_n,
 				i_edge_detect,
